@@ -1,2 +1,2 @@
-# Fresh_Deli
- An online shopping specialized in healthy desserts
+# What this website is about
+An online shopping website specialized in healthy desserts
