@@ -1,0 +1,200 @@
+doctype html
+html(lang="ja")
+    head 
+        include _temp_header
+        title Fresh Deli
+        link(rel="stylesheet", href="css/index.css")
+    body 
+        header 
+            .nav_mainWrap 
+                .navwrap_left 
+                    h1.service_logo: a(href="#"): img(src="img/service_logo.svg", alt="Fresh Deli logo")
+                    ul 
+                        li: a(href="#") Product
+                        li: a(href="#") About
+                        li: a(href="#") News
+                .navwrap_right 
+                    ul 
+                        li: a(href="#"): img(src="img/timesale_icon.png", alt="Timesale icon")
+                        li: a(href="#"): img(src="img/notification_bell_icon.png", alt="Notification icon")
+                        li: a(href="#"): img(src="img/profile_icon.png", alt="Profile icon")
+                        li: a(href="#"): img(src="img/cart_icon.png", alt="Cart icon")
+                        li: a(href="#"): img(src="img/search_icon.png", alt="Search icon")
+            .main_visualWrap 
+                figure: img(src="img/main_visual.jpg", alt="Main visual")
+                .itemWrap 
+                    figure: img(src="img/muffin_fresh.jpg", alt="Thumbnail")
+                    .itemInnerWrap 
+                        h2.thumb_itemTitle マフィン(12個)
+                        span.thumb_price ¥800
+                        span.thumb_currency (税込)
+                    .buy_button
+                        a(href="#")
+                            span.arrow.right Buy Now
+                .newsWrap
+                    a(href="#")
+                        .news_headWrap
+                            h3.newsTitle News 
+                            span.date 2023.04.15
+                        p.news_content 新しい商品の販売が始まりました
+        main 
+            .about_mainWrap 
+                .about_left 
+                    figure: img(src="img/muffin.jpg", alt="")
+                .about_right 
+                    h2.about_title About
+                    p.catchcopy 罪悪感を感じずに、ヘルシーなデザートをあなたへ
+                    p.explanation Fresh Deliは日本全国のデザート専門店から健康的なデザートを取り扱っているECサイトです。不安や罪悪感を無くして、安心で楽しくショッピング体験を目標にしています。ダイエット中の方、アレルギーを持っている方、デザートが好きでもっと楽しみたい方をターゲットとして健康的なデザートの魅力を伝え、様々な種類や期間限定の商品などを販売しています。当サイトはヘルシーなデザートを販売しているだけではなく、健康のサポートとしてダイエット計画システムという機能があります。お客さんが簡単に目標を立て、その目標を達成したら無料で好きなデザートを一個選べます。好きなデザートを安く手軽に購入できるタイムセールというイベントもあります。
+                    a(href="#") About Us
+
+
+
+            .recommendationWrap 
+                .recommend_headWrap 
+                    h2.recommend_title 今日のおすすめ
+                    p.explanation 本日の商品一覧となっています。
+                        br
+                        | 今日はどんなデザートが欲しいと迷っている方向けにぜひこの一覧をご覧ください。
+                .sliderWrap 
+                    //- card1
+                    .product_wrap.card1 
+                        figure: img(src="img/pancakes.jpg", alt="")
+                        h3.product_name いちごパンケーキ
+                        .price_flexwrap 
+                            span.price ¥600
+                            span.currency (税込)
+                        p.product_exp ふわふわなパンケーキにいちご
+                        .buy_button 
+                            a(href="#")
+                                span.arrow.right Buy Now
+                    //- card2
+                    .product_wrap.card2 
+                        figure: img(src="img/brownies_small.jpg", alt="")
+                        h3.product_name ミニブラウニー
+                        .price_flexwrap 
+                            span.price ¥500
+                            span.currency (税込)
+                        p.product_exp たった一口で食べれる甘さ
+                        .buy_button 
+                            a(href="#")
+                                span.arrow.right Buy Now
+                    //- card3
+                    .product_wrap.card3 
+                        figure: img(src="img/parfait.jpg", alt="")
+                        h3.product_name パフェ
+                        .price_flexwrap 
+                            span.price ¥700
+                            span.currency (税込)
+                        p.product_exp 果実の甘さとホイップの組み合わせ
+                        .buy_button 
+                            a(href="#")
+                                span.arrow.right Buy Now
+                    //-card4
+                    .product_wrap.card4 
+                        figure: img(src="img/muffin_fresh.jpg", alt="")
+                        h3.product_name マフィン
+                        .price_flexwrap 
+                            span.price ¥800
+                            span.currency (税込)
+                        p.product_exp 焼きたての柔らかさと甘さ
+                        .buy_button 
+                            a(href="#")
+                                span.arrow.right Buy Now
+                    //-card5
+                    .product_wrap.card5 
+                        figure: img(src="img/brownies.jpg", alt="")
+                        h3.product_name チョコブラウニー
+                        .price_flexwrap 
+                            span.price ¥800
+                            span.currency (税込)
+                        p.product_exp チョコレートの味抜群
+                        .buy_button 
+                            a(href="#")
+                                span.arrow.right Buy Now
+                .recommend_footWrap 
+                    .btnWrap
+                        .previous_button 
+                            span.arrow.right 
+                        .next_button 
+                            span.arrow.left 
+                    a(href="#") View All 
+
+
+
+            .productsWrap 
+                .products_outerWrap 
+                    .products_visualWrap 
+                        h2.products_title Products 
+                    .products_headWrap 
+                        .products_left 
+                            h2.products_subTitle Products 
+                            h3.products_catchcopy キャッチコピー
+                            p.products_exp 説明文
+                        .products_right 
+                            figure: img(src="img/waffle.jpg", alt="")
+                .products_cardWrap
+                    .sliderWrap 
+                        //- card1
+                        .product_wrap.card1 
+                            figure: img(src="img/pancakes.jpg", alt="")
+                            h3.product_name 商品名
+                            .price_flexwrap 
+                                span.price ¥0,000
+                                span.currency (税込)
+                            p.product_exp 説明文
+                            .buy_button 
+                                a(href="#")
+                                    span.arrow.right Buy Now
+                        //- card2
+                        .product_wrap.card2 
+                            figure: img(src="img/brownies_small.jpg", alt="")
+                            h3.product_name 商品名
+                            .price_flexwrap 
+                                span.price ¥0,000
+                                span.currency (税込)
+                            p.product_exp 説明文
+                            .buy_button 
+                                a(href="#")
+                                    span.arrow.right Buy Now
+                        //- card3
+                        .product_wrap.card3 
+                            figure: img(src="img/parfait.jpg", alt="")
+                            h3.product_name 商品名
+                            .price_flexwrap 
+                                span.price ¥0,000
+                                span.currency (税込)
+                            p.product_exp 説明文
+                            .buy_button 
+                                a(href="#")
+                                    span.arrow.right Buy Now
+                        //-card4
+                        .product_wrap.card4 
+                            figure: img(src="img/muffin_fresh.jpg", alt="")
+                            h3.product_name 商品名
+                            .price_flexwrap 
+                                span.price ¥0,000
+                                span.currency (税込)
+                            p.product_exp 説明文
+                            .buy_button 
+                                a(href="#")
+                                    span.arrow.right Buy Now
+                        //-card5
+                        .product_wrap.card5 
+                            figure: img(src="img/brownies.jpg", alt="")
+                            h3.product_name 商品名
+                            .price_flexwrap 
+                                span.price ¥0,000
+                                span.currency (税込)
+                            p.product_exp 説明文
+                            .buy_button 
+                                a(href="#")
+                                    span.arrow.right Buy Now
+                .recommend_footWrap 
+                    .btnWrap
+                        .previous_button 
+                            span.arrow.right 
+                        .next_button 
+                            span.arrow.left 
+                    a(href="#") View All 
+        footer 
+        include _temp_footer
